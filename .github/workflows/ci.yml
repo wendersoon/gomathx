@@ -40,7 +40,7 @@ jobs:
   update-pkg-go-dev:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    needs: [test, lint]
+    needs: [test]
     steps:
     - name: Update pkg.go.dev
       run: |
